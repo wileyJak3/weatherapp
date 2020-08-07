@@ -38,4 +38,12 @@ const Forecast = () => {
     "Friday",
     "Saturday",
   ];
+
+  let printCard = (day) => {
+    let weatherIconURL = `http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`;
+    console.log("this is the weatherUrl", weatherIconURL);
+    let UNIX_Timestamp = day.dt;
+    console.log(UNIX_Timestamp);
+    let date = new Date(UNIX_Timestamp * 1000);
+    console.log("This is current date", date);
 export default Forecast;
