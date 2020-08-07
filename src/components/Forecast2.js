@@ -21,5 +21,12 @@ const Forecast = () => {
       const response = await axios.get(apiLink);
       console.log(response.data);
       setData(response.data);
+    } catch (error) {
+      console.error("!!Señor!! PROBLEMA:", error.message);
+    }
+  }
+  useEffect(() => {
+    getAnswer();
+  }, []); // This bracket here is to prevent onUpdate behavior. So we're telling it to re-render when [] (nothing) updates
 
 export default Forecast;
