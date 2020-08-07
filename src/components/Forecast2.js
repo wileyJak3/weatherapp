@@ -46,4 +46,22 @@ const Forecast = () => {
     console.log(UNIX_Timestamp);
     let date = new Date(UNIX_Timestamp * 1000);
     console.log("This is current date", date);
+    let dateDay = weekday[date.getDay()];
+    console.log("this is dateday", dateDay);
+    return (
+      <DayCard
+        title={dateDay}
+        subtitle={date.getDate()}
+        subtitleMonth={date.getMonth()}
+        iconURL={weatherIconURL}
+        hiTemp={day.temp.max}
+        loTemp={day.temp.min}
+        link={dateDay}
+      />
+    );
+  };
+
+
+
+
 export default Forecast;
