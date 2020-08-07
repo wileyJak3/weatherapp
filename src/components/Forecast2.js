@@ -16,5 +16,10 @@ const Forecast = () => {
   const [data, setData] = useState(null);
   const apiLink = URL + apiKey;
 
+  async function getAnswer() {
+    try {
+      const response = await axios.get(apiLink);
+      console.log(response.data);
+      setData(response.data);
 
 export default Forecast;
