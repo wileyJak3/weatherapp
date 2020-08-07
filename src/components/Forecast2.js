@@ -7,7 +7,14 @@ import "../styles/Forecast2.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PrintHour from "./PrintHour";
 import Forecast2 from "./Forecast2";
+const API_KEY = process.env.REACT_APP_EXAMPLE_API_KEY;
+const URL =
+  "http://api.openweathermap.org/data/2.5/onecall?lat=33.753746&lon=-84.386330&units=imperial&exclude=minutely&appid=";
+const apiKey = API_KEY;
 
+const Forecast = () => {
+  const [data, setData] = useState(null);
+  const apiLink = URL + apiKey;
 
 
 export default Forecast;
