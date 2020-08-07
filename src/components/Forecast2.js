@@ -59,7 +59,26 @@ const Forecast = () => {
         link={dateDay}
       />
     );
+    
   };
+  return (
+    <div className="container-center">
+      <Container fluid>
+        <div className="row-center">
+          <Row>
+            <Router>
+              {
+                // null is a falsey value so if the data is there we render the first part before the ":"
+                // but if we DON'T have any value yet from our API call then we render the string "Loading..."
+                // data ? data.daily[0].clouds : "Loading..."
+                //! ─────────────────────────────────────────────────────────────────
+                data
+                  ? data.daily.map((day) => {
+                      return printCard(day);
+                    })
+                  : "Loading..."
+                //! ─────────────────────────────────────────────────────────────────
+              }
 
 
 
