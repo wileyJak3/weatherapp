@@ -29,4 +29,13 @@ const Forecast = () => {
     getAnswer();
   }, []); // This bracket here is to prevent onUpdate behavior. So we're telling it to re-render when [] (nothing) updates
 
+  let weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 export default Forecast;
