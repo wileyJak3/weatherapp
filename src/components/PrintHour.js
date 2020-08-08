@@ -18,4 +18,13 @@ function PrintHour(props) {
         "Saturday",
       ];
 
-
+      let PrintCardHourly = (hour) => {
+        const filteredArray = []
+        hour.forEach(hour => {
+           
+            console.log(props.day)
+            let UNIX_Timestamp = hour.dt;
+            console.log(UNIX_Timestamp);
+            let date = new Date(UNIX_Timestamp * 1000);
+            console.log("This is current date", date.getDay());
+            let dateDay = weekday[date.getDay()];
