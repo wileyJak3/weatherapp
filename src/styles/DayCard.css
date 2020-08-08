@@ -26,5 +26,9 @@
     padding: 0;
     /* border: solid; */
     }
+    .card-align .card-body{
+        padding-bottom: 0;
+      
+        }
 
 
