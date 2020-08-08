@@ -1,34 +1,34 @@
-.card-align{
-    display: flex;
-    justify-content:space-evenly;
-    flex-direction: column;
-    text-align: center;
-    /* margin-top: 3vh; */
+.card-align {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  /* margin-top: 3vh; */
 }
-.card-align .col{
- 
-    margin: 0;
-    padding-right: 0vw;
-    padding-left: 0vw;
-}
-
-.card-align h5{
-    margin-top: 3px;
-    font-size: 1.2em;
+.card-align .col {
+  margin: 0;
+  padding-right: 0vw;
+  padding-left: 0vw;
 }
 
-.card-align h6{
-    font-size: 1.0em;
-    padding: 0;
+.card-align h5 {
+  margin-top: 3px;
+  font-size: 1.2em;
 }
 
-.card-align .container{
-    padding: 0;
-    /* border: solid; */
-    }
-    .card-align .card-body{
-        padding-bottom: 0;
-      
-        }
+.card-align h6 {
+  font-size: 1em;
+  padding: 0;
+}
 
-
+.card-align .container {
+  padding: 0;
+  /* border: solid; */
+}
+.card-align .card-body {
+  padding-bottom: 0;
+}
+.card-align .card-title {
+  margin-top: -1vh;
+  margin-bottom: 3px;
+}
