@@ -10,3 +10,19 @@ import "../styles/DayCard.css";
 import { BrowserRouter as Router, Switch, Route, Link } from 
 "react-router-dom";
 
+function DayCard(props) {
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  
