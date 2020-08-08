@@ -42,3 +42,8 @@ function PrintHour(props) {
           console.log("this is the weatherUrl", weatherIconURL);
           let UNIX_Timestamp = hour.dt;
           console.log(UNIX_Timestamp);
+          let date = new Date(UNIX_Timestamp * 1000);
+        console.log("This is current date", date);
+        let dateDay = weekday[hour.getDay()];
+        console.log("this is dateday", dateDay);
+        return (
