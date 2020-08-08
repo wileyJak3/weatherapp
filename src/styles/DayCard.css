@@ -12,7 +12,10 @@
     padding-left: 0vw;
 }
 
-
+.card-align h5{
+    margin-top: 3px;
+    font-size: 1.2em;
+}
 
 
 
