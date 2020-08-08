@@ -26,3 +26,15 @@ function DayCard(props) {
     "Dec",
   ];
   
+  let currMonth = months[props.subtitleMonth];
+
+  let path = "/"+props.link 
+  console.log("this is the path",path)
+
+  return (
+    <div>
+      <div className="card-align">
+        <Col>
+          <Card style={{ width: "10rem" }}>
+            <Card.Body>
+              <Card.Title>{props.title}</Card.Title>
