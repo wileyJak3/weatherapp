@@ -5,7 +5,12 @@
     text-align: center;
     /* margin-top: 3vh; */
 }
-
+.card-align .col{
+ 
+    margin: 0;
+    padding-right: 0vw;
+    padding-left: 0vw;
+}
 
 
 
