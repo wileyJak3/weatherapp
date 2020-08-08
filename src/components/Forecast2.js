@@ -59,8 +59,30 @@ const Forecast = () => {
         link={dateDay}
       />
     );
-    
   };
+
+  // let PrintCardHourly = (hour) => {
+  //     let weatherIconURL = `http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`;
+  //     console.log("this is the weatherUrl", weatherIconURL);
+  //     let UNIX_Timestamp = hour.dt;
+  //     console.log(UNIX_Timestamp);
+  //     let date = new Date(UNIX_Timestamp * 1000);
+  //     console.log("This is current date", date);
+  //     let dateDay = weekday[date.getDay()];
+  //     console.log("this is dateday", dateDay);
+  //     return (
+  //       <DayCard
+  //         title={dateDay}
+  //         subtitle={date.getDate()}
+  //         subtitleMonth={date.getMonth()}
+  //         iconURL={weatherIconURL}
+  //         hiTemp={hour.temp.max}
+  //         loTemp={hour.temp.min}
+  //         link={dateDay}
+  //       />
+  //     );
+  //   };
+
   return (
     <div className="container-center">
       <Container fluid>
@@ -79,7 +101,7 @@ const Forecast = () => {
                   : "Loading..."
                 //! ─────────────────────────────────────────────────────────────────
               }
-               <Switch>
+              <Switch>
                 <Route
                   path="/Monday"
                   component={
@@ -89,7 +111,7 @@ const Forecast = () => {
                     />
                   }
                 />
-                 <Route
+                <Route
                   path="/Tuesday"
                   component={
                     <PrintHour
@@ -101,6 +123,7 @@ const Forecast = () => {
                 <Route path="/Wednesday" >
                   {data ? <PrintHour hourly= {data.hourly} day="Wednesday" />: "Loading"}
                 </Route>
+
                 <Route
                   path="/Thursday"
                   component={
@@ -119,7 +142,7 @@ const Forecast = () => {
                     />
                   }
                 />
-                 <Route
+                <Route
                   path="/Saturday"
                   component={
                     <PrintHour
@@ -149,9 +172,4 @@ const Forecast = () => {
     </div>
   );
 };
-export default Forecast;
-
-
-
-
 export default Forecast;
