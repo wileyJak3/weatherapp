@@ -65,3 +65,15 @@ function DayCard(props) {
                     </Col>
                   </Row>
                 </Container>
+                </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        {/* </Row>
+      </Container> */}
+      </div>
+    </div>
+  );
+}
+
+export default DayCard;
