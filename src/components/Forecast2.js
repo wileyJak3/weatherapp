@@ -128,6 +128,15 @@ const Forecast = () => {
                     />
                   }
                 />
+                <Route
+                  path="/Sunday"
+                  component={
+                    <PrintHour
+                      hourly={data ? Forecast2 : "Loading"}
+                      day="Sunday"
+                    />
+                  }
+                />
 
 
 
