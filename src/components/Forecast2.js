@@ -137,6 +137,18 @@ const Forecast = () => {
                     />
                   }
                 />
+                {console.log("inside switch")}
+                {/* <Route exact path="/" component={data
+                  ? Forecast2:"Loading"} /> */}
+                {console.log("inside route")}
+              </Switch>
+            </Router>
+          </Row>
+        </div>
+      </Container>
+    </div>
+  );
+};
 
 
 
