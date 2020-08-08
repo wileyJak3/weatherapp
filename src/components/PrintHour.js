@@ -18,7 +18,8 @@ function PrintHour(props) {
         "Saturday",
       ];
 
-      let PrintCardHourly = (hour) => {
+
+    let PrintCardHourly = (hour) => {
         const filteredArray = []
         hour.forEach(hour => {
            
@@ -37,28 +38,29 @@ function PrintHour(props) {
         console.log("this is the filtered array",filteredArray)
         filteredArray.map(hour => {
        
-          console.log("this is the hourly array",hour)
-          let weatherIconURL = `http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`;
-          console.log("this is the weatherUrl", weatherIconURL);
-          let UNIX_Timestamp = hour.dt;
-          console.log(UNIX_Timestamp);
-          let date = new Date(UNIX_Timestamp * 1000);
+        console.log("this is the hourly array",hour)
+        let weatherIconURL = `http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`;
+        console.log("this is the weatherUrl", weatherIconURL);
+        let UNIX_Timestamp = hour.dt;
+        console.log(UNIX_Timestamp);
+        let date = new Date(UNIX_Timestamp * 1000);
         console.log("This is current date", date);
         let dateDay = weekday[hour.getDay()];
         console.log("this is dateday", dateDay);
         return (
           <DayCard
-          title={dateDay}
-          subtitle={date.getDate()}
-          subtitleMonth={date.getMonth()}
-          iconURL={weatherIconURL}
-          hiTemp={hour.temp.max}
-          loTemp={hour.temp.min}
-          link={dateDay}
-        />
-      );
-    })
-  }
+            title={dateDay}
+            subtitle={date.getDate()}
+            subtitleMonth={date.getMonth()}
+            iconURL={weatherIconURL}
+            hiTemp={hour.temp.max}
+            loTemp={hour.temp.min}
+            link={dateDay}
+          />
+        );
+      })
+    }
+
   return (
     <div>
       <Container>
