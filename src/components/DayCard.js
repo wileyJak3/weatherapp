@@ -54,3 +54,14 @@ function DayCard(props) {
                   </Button>
                 </Link>
               </a>
+              <Card.Text>
+                <Container>
+                  <Row sm={2} md={2} lg={2} xl={2}>
+                    <Col>
+                      <h5>{props.hiTemp}</h5>
+                    </Col>
+                    <Col>
+                      <h5>{props.loTemp}</h5>
+                    </Col>
+                  </Row>
+                </Container>
