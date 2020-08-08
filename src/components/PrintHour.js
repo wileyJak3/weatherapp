@@ -35,3 +35,10 @@ function PrintHour(props) {
         });
        
         console.log("this is the filtered array",filteredArray)
+        filteredArray.map(hour => {
+       
+          console.log("this is the hourly array",hour)
+          let weatherIconURL = `http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`;
+          console.log("this is the weatherUrl", weatherIconURL);
+          let UNIX_Timestamp = hour.dt;
+          console.log(UNIX_Timestamp);
