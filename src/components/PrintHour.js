@@ -47,3 +47,15 @@ function PrintHour(props) {
         let dateDay = weekday[hour.getDay()];
         console.log("this is dateday", dateDay);
         return (
+          <DayCard
+          title={dateDay}
+          subtitle={date.getDate()}
+          subtitleMonth={date.getMonth()}
+          iconURL={weatherIconURL}
+          hiTemp={hour.temp.max}
+          loTemp={hour.temp.min}
+          link={dateDay}
+        />
+      );
+    })
+  }
