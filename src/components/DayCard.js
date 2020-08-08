@@ -38,3 +38,19 @@ function DayCard(props) {
           <Card style={{ width: "10rem" }}>
             <Card.Body>
               <Card.Title>{props.title}</Card.Title>
+              <h6>
+                {`${currMonth}
+                ${props.subtitle}`}
+              </h6>
+              <a className="nav-link">
+                <Link to={path}>
+                {/* <Link to={`/${props.link}`}> */}
+                  <Button variant="primary">
+                    <Card.Img
+                      variant="top"
+                      src={props.iconURL}
+                      // src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"
+                    />
+                  </Button>
+                </Link>
+              </a>
