@@ -1,0 +1,15 @@
+.card-align{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    text-align: center;
+    /* margin-top: 3vh; */
+}
+
+
+
+
+
+
+
+
