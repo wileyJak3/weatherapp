@@ -59,3 +59,13 @@ function PrintHour(props) {
       );
     })
   }
+  return (
+    <div>
+      <Container>
+        <Row>{PrintCardHourly(props.hourly)}</Row>
+      </Container>
+    </div>
+  );
+}
+
+export default PrintHour;
