@@ -22,6 +22,9 @@
     padding: 0;
 }
 
-
+.card-align .container{
+    padding: 0;
+    /* border: solid; */
+    }
 
 
