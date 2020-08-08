@@ -28,3 +28,10 @@ function PrintHour(props) {
             let date = new Date(UNIX_Timestamp * 1000);
             console.log("This is current date", date.getDay());
             let dateDay = weekday[date.getDay()];
+            console.log("this is date day",dateDay)
+            if(dateDay == props.day){
+                filteredArray.push(hour)
+            }
+        });
+       
+        console.log("this is the filtered array",filteredArray)
