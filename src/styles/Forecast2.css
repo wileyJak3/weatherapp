@@ -1,0 +1,11 @@
+.row-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-center .container-fluid {
+    margin-right: 0vh;
+    margin-left: 1.2vh;
+    padding-right: 2vw;
+    
+}
