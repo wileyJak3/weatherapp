@@ -25,7 +25,6 @@ function DayCard(props) {
     "Nov",
     "Dec",
   ];
-  
   let currMonth = months[props.subtitleMonth];
 
   let path = "/"+props.link 
@@ -65,7 +64,7 @@ function DayCard(props) {
                     </Col>
                   </Row>
                 </Container>
-                </Card.Text>
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>
